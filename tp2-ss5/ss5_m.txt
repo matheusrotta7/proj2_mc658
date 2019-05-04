@@ -18,13 +18,13 @@ M suficientemente grande, servindo M = sum(tj, j=1...n)
 
 Tarefa i termina antes de j se i precede imediatemente j.
 
-yij + yji <= 1
+yij + yji <= 1 [i,j = 1..n]
 Não é possível que tarefa i precede imediatamente j e vice-versa.
 
-sum(yij, i=1...n) <= 1 [j = 1...n]
+sum(yij, j=1...n) <= 1 [i = 1...n]
 Uma tarefa só pode preceder imediatamente outra apenas uma vez.
 
-sum(yij, j=1...n) <= 1[i = 1...n]
+sum(yij, i=1...n) <= 1 [j = 1...n]
 Uma tarefa só pode ser precedida imediatamente por outra apenas uma vez.
 
 sum(yij, i,j=1..n) == n-1

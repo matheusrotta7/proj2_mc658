@@ -37,9 +37,6 @@ m = Model(solver = GurobiSolver(NodefileStart=MEM, TimeLimit=TL))
 @objective(m, Min, dot(p,a))
 
 for i=1:n,j=1:n
-  if i == j
-    continue
-  end
   @constraint(m, s[i] + t[i] <= s[j] + M*(1-y[i,j]))
 end
 
