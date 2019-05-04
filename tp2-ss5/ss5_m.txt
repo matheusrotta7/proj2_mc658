@@ -1,0 +1,37 @@
+parâmetros
+tj tempo necessário para executara  tarefa j=1...n
+dj prazo de entrega da tarefa j=1...n
+
+variáveis
+sj tempo de início da tarefa j=1...n
+aj atraso da tarefa j=1...n
+yij:Binary tarefa i (não [0]) precede [1] imediatamente tarefa j i,j=1..n
+
+FO: min sum(pj.aj, j=1...n)
+Minimiza valor pago pelos atrasos.
+
+sj >= 0 [j = 1...n]
+As tarefas começam no tempo 0.
+
+si+ti <= sj + (1-yij)M [i,j = 1...n]
+M suficientemente grande, servindo M = sum(tj, j=1...n)
+
+Tarefa i termina antes de j se i precede imediatemente j.
+
+yij + yji <= 1
+Não é possível que tarefa i precede imediatamente j e vice-versa.
+
+sum(yij, i=1...n) <= 1 [j = 1...n]
+Uma tarefa só pode preceder imediatamente outra apenas uma vez.
+
+sum(yij, j=1...n) <= 1[i = 1...n]
+Uma tarefa só pode ser precedida imediatamente por outra apenas uma vez.
+
+sum(yij, i,j=1..n) == n-1
+Número de precedências é n-1.
+
+aj >= 0 [j=1...n]
+Atraso não é negativo.
+
+aj >= sj+tj-dj [j=1..n]
+Atraso pago é no mínimo a diferença entre o tempo de término da tarefa e o tempo do prazo.

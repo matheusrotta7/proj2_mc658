@@ -1,0 +1,16 @@
+Seja n = |V|
+
+xij: Inteiro vertice i = 1...n com cor j = 1...n
+yj: Inteiro cor j = 1...n usada
+
+xuj+xuj <= 1 [j=1..n, {u,v} in E]
+Uma cor não pode ser usada ao mesmo tempo em vértices adjacentes
+
+sum(xij, j=1...n) = 1 [i = 1...n]
+Todos os vértices tem de ser pintados com uma cor exatamente
+
+yj >= xij i=1...n [j = 1...n]
+Uma cor é usada no grafo se ela é usado em um dos vértices
+
+FO: min sum (yj, j=1...n)
+Minimiza número de cores usadas
