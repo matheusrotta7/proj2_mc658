@@ -55,8 +55,6 @@ for j = 1:n
   @constraint(m, a[j] >= s[j]+t[j]-d[j])
 end
 
-println(m)
-
 status = solve(m)
 
 # ----------------------------------------

@@ -42,8 +42,6 @@ for j = 1:nv
   end
 end
 
-println(m)
-
 status = solve(m)
 
 # ----------------------------------------
