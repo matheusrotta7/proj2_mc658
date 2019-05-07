@@ -44,16 +44,16 @@ end
 #-------------grab input(end)------------#
 
 #-------------check input------------#
-println("value of n:")
-println(n)
-println("value of card_S:")
-println(card_S)
-println("S precedence tuples:")
-println(S)
-println("values of t:")
-println(t)
-println("values of d:")
-println(d)
+# println("value of n:")
+# println(n)
+# println("value of card_S:")
+# println(card_S)
+# println("S precedence tuples:")
+# println(S)
+# println("values of t:")
+# println(t)
+# println("values of d:")
+# println(d)
 #-------------check input(end)------------#
 
 
@@ -110,7 +110,31 @@ for j = 1:n
     @constraint(DEADLINE, s[j] + t[j] <= d[j] + M*y[j])
 end
 
+#    imprime e resolve o modelo
+# print(DEADLINE)
 status = solve(DEADLINE)
+# println("Status da solução: $status")
+# obj = getobjectivevalue(DEADLINE)
+# s_star = getvalue(s)
+# y_star = getvalue(y)
+# p_star  = getvalue(p)
+#
+# #    imprime resultados
+# println("valor ótimo = $obj")
+# println(s_star)
+# println(y_star)
+# for i in 1:n
+#    @printf("%3d:",i)
+#    for j in 1:n
+#       if (i != j)
+#          e=(i,j)
+#          @printf("%2d",p_star[e])
+#       else
+#          @printf(" N")
+#       end
+#    end
+#    println()
+# end
 
 # --------------------------------------------------------------------
 
