@@ -18,6 +18,11 @@ M suficientemente grande, servindo M = sum(tj, j=1...n)
 
 Tarefa i termina antes de j se i precede imediatemente j.
 
+si+ti >= sj - (1-yij)M [i,j = 1...n]
+Serve o mesmo M = sum(tj, j=1...n)
+
+Tarefa j começa logo que a tarefa i termina se i precede imediatamente j. 
+
 yij + yji <= 1 [i,j = 1..n]
 Não é possível que tarefa i precede imediatamente j e vice-versa.
 
