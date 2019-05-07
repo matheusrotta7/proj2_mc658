@@ -46,13 +46,7 @@ for i = 1:n
   @constraint(m, e[i+1]-e[i] == q[i]-d[i])
 end
 
-println(m)
-
 status = solve(m)
-
-println(d)
-println(getvalue(e))
-println(getvalue(q))
 
 # ----------------------------------------
 # Relatório

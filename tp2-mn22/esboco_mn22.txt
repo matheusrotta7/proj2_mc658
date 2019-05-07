@@ -1,0 +1,39 @@
+idéia:
+Quando a máquina não estiver na mesma sala da peça, pagamos o custo uma vez. (é fácil ver por quê)
+Não precisa de mais de R=|V| salas (salas têm pelo menos uma máquina)
+Precisamos de até R=ceil(|V|/2) salas quando podemos colocar 2 ou mais máquinas em um mesma sala
+
+variáveis:
+miv:Bin = máquina v = 1...|V| na sala i = 1...R
+piu:Bin = peça u = 1...|U| na sala i = 1...R
+tvu:Bin = transferência de peça u = 1...|U| para outra sala com a máquina i = 1...|V|
+
+min sum(cvu.tvu, (v,u) in E)
+
+tuv >= piu-miv [i = 1...|V|, u = 1...|U|, v = 1...|V|]
+Força transferência quando a peça u e a máquina v estão em salas diferentes.
+
+sum(piu, i=1...|V|) = 1 [u=1...|U|]
+Colocar a peça u em uma única sala
+
+sum(miv, i=1...|U|) = 1 [v=1...|V|]
+Colocar máquina v em uma única sala
+
+sum(miv, v=1...|V|) <= K [i=1...|V|]
+Colocar até K máquinas na sala i
+
+Planilha
+Calcular índice de cada par (v, u)
+Usar funções INDEX e MATCH para pegar o custo
+variáveis:
+
+         1  ...  |U|  1  ...  |V| 
+salas 1
+      .     piu          miv
+      .
+      r
+      1
+      .     tvu
+      .
+      |V|
+
