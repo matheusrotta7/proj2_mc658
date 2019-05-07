@@ -1,0 +1,51 @@
+Academic license - for non-commercial use only
+Warning for adding constraints: zero or small (< 1e-13) coefficients, ignored
+Optimize a model with 127 rows, 48 columns and 378 nonzeros
+Variable types: 12 continuous, 36 integer (36 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [7e+01, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+02]
+Presolve removed 33 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 94 rows, 42 columns, 312 nonzeros
+Variable types: 12 continuous, 30 integer (30 binary)
+
+Root relaxation: objective 0.000000e+00, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    4          -    0.00000      -     -    0s
+H    0     0                    89194.000000    0.00000   100%     -    0s
+     0     0    0.00000    0   10 89194.0000    0.00000   100%     -    0s
+     0     0    0.00000    0   10 89194.0000    0.00000   100%     -    0s
+     0     0    0.00000    0    4 89194.0000    0.00000   100%     -    0s
+     0     0    0.00000    0    6 89194.0000    0.00000   100%     -    0s
+     0     0    0.00000    0    5 89194.0000    0.00000   100%     -    0s
+     0     0    0.00000    0    5 89194.0000    0.00000   100%     -    0s
+     0     2    0.00000    0    5 89194.0000    0.00000   100%     -    0s
+H   24    12                    80140.000000    0.00000   100%   5.7    0s
+*  368    56              10    79668.000000    0.00000   100%   5.8    0s
+
+Cutting planes:
+  Cover: 2
+  Implied bound: 21
+  Clique: 1
+  MIR: 16
+
+Explored 1006 nodes (6187 simplex iterations) in 0.25 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 79668 80140 89194 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.966800000000e+04, best bound 7.966800000000e+04, gap 0.0000%
+===============================
+Solucão ótima encontrada.
+Número de nós explorados: 1006
+Melhor limitante dual: 79668.00
+Melhor limitante primal: 79668.00
+Gap de otimalidade: 0.00
+Tempo de execucão: 0.25

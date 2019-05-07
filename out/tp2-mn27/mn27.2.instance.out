@@ -1,0 +1,35 @@
+Academic license - for non-commercial use only
+Optimize a model with 4150 rows, 650 columns and 8875 nonzeros
+Variable types: 0 continuous, 650 integer (650 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 18.0000000
+Presolve removed 3400 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 750 rows, 650 columns, 4175 nonzeros
+Variable types: 0 continuous, 650 integer (650 binary)
+
+Root relaxation: objective 1.300000e+01, 722 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      13.0000000   13.00000  0.00%     -    0s
+
+Explored 0 nodes (722 simplex iterations) in 0.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 13 18 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.300000000000e+01, best bound 1.300000000000e+01, gap 0.0000%
+===============================
+Solucão ótima encontrada.
+Número de nós explorados: 0
+Melhor limitante dual: 13.00
+Melhor limitante primal: 13.00
+Gap de otimalidade: 0.00
+Tempo de execucão: 0.05

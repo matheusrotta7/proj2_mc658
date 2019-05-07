@@ -109,31 +109,8 @@ end
 for j = 1:n
     @constraint(DEADLINE, s[j] + t[j] <= d[j] + M*y[j])
 end
-#    imprime e resolve o modelo
-print(DEADLINE)
-status = solve(DEADLINE)
-println("Status da solução: $status")
-obj = getobjectivevalue(DEADLINE)
-s_star = getvalue(s)
-y_star = getvalue(y)
-p_star  = getvalue(p)
 
-#    imprime resultados
-println("valor ótimo = $obj")
-println(s_star)
-println(y_star)
-for i in 1:n
-   @printf("%3d:",i)
-   for j in 1:n
-      if (i != j)
-         e=(i,j)
-         @printf("%2d",p_star[e])
-      else
-         @printf(" N")
-      end
-   end
-   println()
-end
+status = solve(DEADLINE)
 
 # --------------------------------------------------------------------
 

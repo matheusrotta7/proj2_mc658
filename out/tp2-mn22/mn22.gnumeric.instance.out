@@ -1,0 +1,29 @@
+Academic license - for non-commercial use only
+Optimize a model with 27 rows, 26 columns and 72 nonzeros
+Variable types: 0 continuous, 26 integer (26 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 2.0000000
+Presolve removed 25 rows and 23 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 3 columns, 6 nonzeros
+Found heuristic solution: objective 1.0000000
+Variable types: 0 continuous, 3 integer (3 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 1 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+===============================
+Solucão ótima encontrada.
+Número de nós explorados: 0
+Melhor limitante dual: 1.00
+Melhor limitante primal: 1.00
+Gap de otimalidade: 0.00
+Tempo de execucão: 0.00

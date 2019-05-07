@@ -1,0 +1,47 @@
+Academic license - for non-commercial use only
+Optimize a model with 58200 rows, 2550 columns and 118800 nonzeros
+Variable types: 0 continuous, 2550 integer (2550 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 45.0000000
+Presolve removed 55450 rows and 0 columns
+Presolve time: 0.66s
+Presolved: 2750 rows, 2550 columns, 53400 nonzeros
+Variable types: 0 continuous, 2550 integer (2550 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    7954    2.1000002e+01   1.053870e+03   0.000000e+00      5s
+   11160    2.2000000e+01   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 2.200000e+01, 11160 iterations, 5.97 seconds
+Total elapsed time = 10.41s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   22.00000    0  130   45.00000   22.00000  51.1%     -   10s
+H    0     0                      24.0000000   22.00000  8.33%     -   10s
+     0     0   22.00000    0  188   24.00000   22.00000  8.33%     -   11s
+     0     0   23.00000    0   77   24.00000   23.00000  4.17%     -   13s
+     0     0   23.00000    0   10   24.00000   23.00000  4.17%     -   14s
+*    0     0               0      23.0000000   23.00000  0.00%     -   14s
+
+Explored 1 nodes (32204 simplex iterations) in 15.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 23 24 45 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.300000000000e+01, best bound 2.300000000000e+01, gap 0.0000%
+===============================
+Solucão ótima encontrada.
+Número de nós explorados: 1
+Melhor limitante dual: 23.00
+Melhor limitante primal: 23.00
+Gap de otimalidade: 0.00
+Tempo de execucão: 15.00

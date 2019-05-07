@@ -1,0 +1,49 @@
+Academic license - for non-commercial use only
+Optimize a model with 96 rows, 72 columns and 244 nonzeros
+Variable types: 8 continuous, 64 integer (64 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+02]
+Presolve removed 33 rows and 33 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 181 nonzeros
+Variable types: 8 continuous, 31 integer (31 binary)
+
+Root relaxation: objective 1.000000e+00, 18 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    1.00000    0    2          -    1.00000      -     -    0s
+H    0     0                       2.0000000    1.00000  50.0%     -    0s
+     0     0     cutoff    0         2.00000    2.00000  0.00%     -    0s
+
+Cutting planes:
+  Implied bound: 1
+
+Explored 1 nodes (56 simplex iterations) in 0.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+00, best bound 2.000000000000e+00, gap 0.0000%
+value of n:
+8
+value of card_S:
+4
+S precedence tuples:
+Tuple{Int64,Int64}[(2, 5), (4, 6), (4, 3), (7, 1)]
+values of t:
+[89, 25, 11, 83, 89, 51, 84, 21]
+values of d:
+[419, 102, 196, 134, 400, 84, 106, 60]
+========================================================================
+Solução ótima encontrada.
+Número de nós explorados: 1
+Melhor limitante dual: 2.00
+Melhor limitante primal: 2.00
+Gap de otimalidade: 0.00
+Tempo de execução: 0.01

@@ -1,0 +1,36 @@
+Academic license - for non-commercial use only
+Optimize a model with 22 rows, 31 columns and 52 nonzeros
+Variable types: 21 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+03]
+  Objective range  [1e+01, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e+01, 7e+03]
+Presolve removed 5 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 17 rows, 26 columns, 42 nonzeros
+Variable types: 17 continuous, 9 integer (9 binary)
+
+Root relaxation: objective 1.819919e+06, 18 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1819919.32    0    8          - 1819919.32      -     -    0s
+H    0     0                    1820667.0000 1819919.32  0.04%     -    0s
+     0     0     cutoff    0      1820667.00 1820667.00  0.00%     -    0s
+
+Explored 1 nodes (25 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 1.82067e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.820667000000e+06, best bound 1.820667000000e+06, gap 0.0000%
+===============================
+Solucão ótima encontrada.
+Número de nós explorados: 1
+Melhor limitante dual: 1820667.00
+Melhor limitante primal: 1820667.00
+Gap de otimalidade: 0.00
+Tempo de execucão: 0.00
